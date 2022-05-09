@@ -8,6 +8,41 @@ Training/Validation -> COCO dataset (downloaded in code) 8000/2000
 Test -> Kaggle Dataset: [Image Super Resolution](https://www.kaggle.com/datasets/adityachandrasekhar/image-super-resolution)
         and [Super Image Resolution](https://www.kaggle.com/datasets/akhileshdkapse/superimage-resolution).
 
+### Directory Format:
+
+    .
+    ├── colorized_images
+        ├── LR_fake             #Low resolution images colorization outcomes
+        ├── LR_real_bw          #Low resolution *L channel images
+        ├── LR_real_rgb         #Low resolution RGB images (orignal images considered while testing)
+    ├── ESRGAN_Results
+        ├── colortosuper        #LR -> Color -> Super Outcomes
+        ├── LRtosuper           #LR -> Super Outcomes
+        ├── super_bw            #Super Resolution Outcomes *L channel
+        ├── super_rgb           #Super Resolution Outcomes RGB
+        ├── supertocolor        #LR -> Super -> Color Outcomes
+    ├── experiments
+        ├── pretrained_models
+            ├── RealESRGAN_x4plus.pth #Downloaded in Code
+    ├── models
+        ├── (All downloaded weights for ESRGAN will come here)
+    ├── realesrgan #As provided
+    ├── RealESRGAN_Results
+        ├── colortosuper
+        ├── LRtosuper
+        ├── super_bw
+        ├── super_rgb
+        ├── supertocolor
+    ├── test_data
+        ├── LR          #Low Resolution test data from Kaggle
+    ├── color.pt
+    ├── VizWiz_Data_val
+    ├── ColorizationESR.ipynb
+    ├── ColorizationRealESR.ipynb
+    ├── inference_realesrgan.py
+    ├── res18-unet.pt
+    └── RRDBNet_arch.py
+
 ## Overall Architecture for Colorization:
 ![image](https://user-images.githubusercontent.com/83297868/167446032-4893d3f5-c4f2-4475-9c2c-963b1c6b026d.png)
 
