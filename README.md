@@ -1,13 +1,20 @@
 # Analysis-of-Super-Resolution-in-Image-De-Oldification
 Trained an image colorization model from scratch using conditional GAN architecture where the generator is a dynamic UNet (UNet with ResNet18 backbone) and the discriminator is a block of conv->BN->Relu. Implemented and analyzed two pipelines involving blur image colorization  followed by super resolution and blur image super resolution followed by colorization, where for implementing super resolution two different architectures are considered, ESRGAN and Real ESRGAN.
 
+## Datasets:
+
+Training/Validation -> COCO dataset (downloaded in code) 8000/2000
+
+Test -> Kaggle Dataset: [Image Super Resolution](https://www.kaggle.com/datasets/adityachandrasekhar/image-super-resolution)
+        and [Super Image Resolution](https://www.kaggle.com/datasets/akhileshdkapse/superimage-resolution).
+
 ## Overall Architecture for Colorization:
 ![image](https://user-images.githubusercontent.com/83297868/167446032-4893d3f5-c4f2-4475-9c2c-963b1c6b026d.png)
 
 ## Conditional GAN Generator (UNet with ResNet18 backbone) Architecture:
 ![image](https://user-images.githubusercontent.com/83297868/167445547-38e9d3a7-c417-4ae6-a024-cc0b7c72c9b1.png)
 
-## Models Proposed:
+# Models Proposed:
 ### Model Pipeline 1:
 ![image](https://user-images.githubusercontent.com/83297868/167445812-25b81278-28e1-472b-beed-6575d86776b6.png)
 
