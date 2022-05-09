@@ -1,1 +1,1 @@
-Download weights for ESRGAN from dive at [xinntao GitHub](https://github.com/xinntao/ESRGAN)
+Download weights for ESRGAN from drive at [xinntao GitHub](https://github.com/xinntao/ESRGAN)
