@@ -26,6 +26,8 @@ Trained an image colorization model from scratch using conditional GAN architect
 ### Pipeline 2 Outcome for structured images with ESRGAN and RealESRGAN
 ![Face](https://user-images.githubusercontent.com/83297868/167447963-36015ab9-4666-424c-b360-20a5220ddf56.gif)
 
+### Pipeline 2 Outcome for non-structured images with ESRGAN and RealESRGAN
+![Nature](https://user-images.githubusercontent.com/83297868/167449476-ee6972fb-73b7-4fae-9b33-63ea305f4467.gif)
 
 ### Outcomes from different pipelines:
 ![image](https://user-images.githubusercontent.com/83297868/167447262-63143694-b0c8-4229-b86d-636d886ce42d.png)
